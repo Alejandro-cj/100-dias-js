@@ -16,3 +16,7 @@
     Los operadores realizan operaciones entre valores. + * - /
     Las funciones son bloques de código reutilizables. Se declaran con function.
     
+#  Día 3: Explorando Operadores y Estructuras de Control
+
+    Hasta ahora, hemos utilizado operadores básicos como suma (+), resta (-), multiplicación (*), y división (/).
+    También existen operadores de comparación (===, !==, <, >, <=, >=) y operadores lógicos (&&, ||, !).
