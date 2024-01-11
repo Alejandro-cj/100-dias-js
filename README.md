@@ -99,8 +99,9 @@ Implementación de sistemas de login.
 Configuración de entornos de producción.
 Despliegue en servicios en la nube (por ejemplo, Heroku).
 
-¡Que comience el desafío!  ¡Buena suerte en tu viaje de 100 días de aprendizaje intensivo en JavaScript!"
-
 # 5. Seguridad en Aplicaciones Web:
 Mejores prácticas de seguridad.
 Prevención de ataques comunes.
+
+
+¡Que comience el desafío!  ¡Buena suerte en tu viaje de 100 días de aprendizaje intensivo en JavaScript!"
