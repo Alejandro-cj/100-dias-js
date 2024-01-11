@@ -10,3 +10,9 @@
 
     Bucles (for): Permiten repetir bloques de código varias veces.
     Loops (for): They allow you to repeat blocks of code multiple times.
+
+# Día 2: Profundizando en Fundamentos y Primer Proyecto
+
+    Los operadores realizan operaciones entre valores. + * - /
+    Las funciones son bloques de código reutilizables. Se declaran con function.
+    
