@@ -1,0 +1,30 @@
+<!-- Archivo HTML -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulación del DOM y Eventos</title>
+</head>
+<body>
+
+  <!-- Elemento en el DOM -->
+  <h1 id="tituloPrincipal">Bienvenido</h1>
+  <button id="botonSaludar">Saludar</button>
+
+  <script>
+    // Selección de elementos del DOM
+    let titulo = document.getElementById('tituloPrincipal');
+    let boton = document.getElementById('botonSaludar');
+
+    // Manipulación del contenido de un elemento
+    titulo.textContent = 'Hola, Mundo!';
+
+    // Manejo de eventos
+    boton.addEventListener('click', function() {
+      alert('¡Hola!');
+    });
+  </script>
+
+</body>
+</html>

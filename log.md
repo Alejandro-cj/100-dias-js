@@ -30,3 +30,8 @@
 
     Estructuras que permiten almacenar datos en pares clave-valor.
     Pueden contener propiedades y métodos.
+
+#  Día 6: Manipulación del DOM y Eventos
+
+    Representación estructurada de un documento HTML que permite interactuar con él mediante programación.
+    Los elementos del DOM pueden ser accedidos y manipulados con JavaScript.

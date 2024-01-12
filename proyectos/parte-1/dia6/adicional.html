@@ -1,0 +1,26 @@
+<!-- Archivo HTML -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafío Adicional - Cambiar Contenido con Query Selector</title>
+</head>
+<body>
+
+  <button id="botonCambio">Cambiar Contenido</button>
+  <p class="areaTexto">Haz clic en el botón para cambiar el contenido.</p>
+
+  <script>
+    // Selección de elementos del DOM con querySelector
+    let boton = document.querySelector('#botonCambio');
+    let areaTexto = document.querySelector('.areaTexto');
+
+    // Manejo de eventos para cambiar el contenido del área de texto
+    boton.addEventListener('click', function() {
+      areaTexto.textContent = '¡Contenido cambiado con Query Selector!';
+    });
+  </script>
+
+</body>
+</html>

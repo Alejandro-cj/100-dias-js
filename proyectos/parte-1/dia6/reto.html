@@ -1,0 +1,26 @@
+<!-- Archivo HTML -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Pequeño - Cambiar Contenido</title>
+</head>
+<body>
+
+  <button id="botonCambio">Cambiar Contenido</button>
+  <p id="areaTexto">Haz clic en el botón para cambiar el contenido.</p>
+
+  <script>
+    // Selección de elementos del DOM
+    let boton = document.getElementById('botonCambio');
+    let areaTexto = document.getElementById('areaTexto');
+
+    // Manejo de eventos para cambiar el contenido del área de texto
+    boton.addEventListener('click', function() {
+      areaTexto.textContent = '¡Contenido cambiado!';
+    });
+  </script>
+
+</body>
+</html>
