@@ -35,3 +35,21 @@
 
     Representación estructurada de un documento HTML que permite interactuar con él mediante programación.
     Los elementos del DOM pueden ser accedidos y manipulados con JavaScript.
+
+
+#   Día 7: Introducción a AJAX y Consumo de API
+    Repaso Rápido:
+    AJAX (Asynchronous JavaScript and XML):
+
+    Técnica que permite realizar solicitudes asíncronas al servidor desde el navegador sin recargar la página.
+    Se utiliza para obtener y enviar datos en segundo plano.
+    Ejemplo de solicitud con XMLHttpRequest:
+    let solicitud = new XMLHttpRequest();
+    solicitud.open('GET', 'https://api.example.com/data', true);
+    solicitud.onreadystatechange = function() {
+        if (solicitud.readyState === 4 && solicitud.status === 200) {
+        let datos = JSON.parse(solicitud.responseText);
+    console.log(datos);
+    }
+    };
+    solicitud.send();

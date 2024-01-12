@@ -1,0 +1,30 @@
+<!-- Archivo HTML - Desafío Adicional con fetch() -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafío Adicional - AJAX con fetch()</title>
+</head>
+<body>
+
+  <button id="botonCargarDatos">Cargar Datos</button>
+  <div id="resultado"></div>
+
+  <script>
+    let boton = document.getElementById('botonCargarDatos');
+    let resultado = document.getElementById('resultado');
+
+    boton.addEventListener('click', function() {
+      // Usar la función fetch para realizar la solicitud
+      fetch('https://jsonplaceholder.typicode.com/todos/1')
+        .then(response => response.json())
+        .then(datos => {
+          resultado.textContent = `ID: ${datos.id}, Título: ${datos.title}`;
+        })
+        .catch(error => console.error('Error:', error));
+    });
+  </script>
+
+</body>
+</html>

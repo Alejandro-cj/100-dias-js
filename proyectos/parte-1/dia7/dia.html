@@ -1,0 +1,44 @@
+<!-- Archivo HTML -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introducción a AJAX y Consumo de API</title>
+</head>
+<body>
+
+  <button id="botonCargarDatos">Cargar Datos</button>
+  <div id="resultado"></div>
+
+  <script>
+    // Selección de elementos del DOM
+    let boton = document.getElementById('botonCargarDatos');
+    let resultado = document.getElementById('resultado');
+
+    // Manejo de eventos para cargar datos mediante AJAX
+    boton.addEventListener('click', function() {
+      // Crear una solicitud XMLHttpRequest
+      let solicitud = new XMLHttpRequest();
+
+      // Configurar la solicitud
+      solicitud.open('GET', 'https://jsonplaceholder.typicode.com/todos/1', true);
+
+      // Manejar cambios en el estado de la solicitud
+      solicitud.onreadystatechange = function() {
+        if (solicitud.readyState === 4 && solicitud.status === 200) {
+          // Convertir la respuesta JSON a un objeto JavaScript
+          let datos = JSON.parse(solicitud.responseText);
+          
+          // Mostrar los datos en el elemento resultado
+          resultado.textContent = `ID: ${datos.id}, Título: ${datos.title}`;
+        }
+      };
+
+      // Enviar la solicitud
+      solicitud.send();
+    });
+  </script>
+
+</body>
+</html>

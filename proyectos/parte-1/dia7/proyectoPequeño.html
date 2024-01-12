@@ -1,0 +1,35 @@
+<!-- Archivo HTML - Proyecto con XMLHttpRequest -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Pequeño - AJAX con XMLHttpRequest</title>
+</head>
+<body>
+
+  <button id="botonCargarDatos">Cargar Datos</button>
+  <div id="resultado"></div>
+
+  <script>
+    let boton = document.getElementById('botonCargarDatos');
+    let resultado = document.getElementById('resultado');
+
+    boton.addEventListener('click', function() {
+      let solicitud = new XMLHttpRequest();
+
+      solicitud.open('GET', 'https://jsonplaceholder.typicode.com/todos/1', true);
+
+      solicitud.onreadystatechange = function() {
+        if (solicitud.readyState === 4 && solicitud.status === 200) {
+          let datos = JSON.parse(solicitud.responseText);
+          resultado.textContent = `ID: ${datos.id}, Título: ${datos.title}`;
+        }
+      };
+
+      solicitud.send();
+    });
+  </script>
+
+</body>
+</html>
