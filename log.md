@@ -68,3 +68,14 @@
         
         let elemento = document.getElementById('miElemento');
         elemento.classList.add('miClase');
+
+# Día 9: Introducción a Frameworks de JavaScript
+    Hoy exploraremos brevemente la idea de los frameworks de JavaScript y su importancia en el desarrollo web   moderno.
+
+    Repaso Rápido:
+        *Frameworks de JavaScript:*
+
+    Son conjuntos de herramientas y bibliotecas predefinidas que simplifican el desarrollo web.
+    Ayudan a organizar y estructurar el código de manera eficiente.
+    Proporcionan soluciones para tareas comunes.
+    Ejemplos populares incluyen React, Angular y Vue.js.
