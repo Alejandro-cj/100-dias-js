@@ -25,3 +25,8 @@
 
     las funciones son bloques de codigos reutilizables.
     pueden tomar parametros y devolver valores.
+
+#  Día 5: Manipulación de Objetos y Proyecto con Funciones
+
+    Estructuras que permiten almacenar datos en pares clave-valor.
+    Pueden contener propiedades y métodos.
