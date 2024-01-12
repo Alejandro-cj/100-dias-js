@@ -20,3 +20,8 @@
 
     Hasta ahora, hemos utilizado operadores básicos como suma (+), resta (-), multiplicación (*), y división (/).
     También existen operadores de comparación (===, !==, <, >, <=, >=) y operadores lógicos (&&, ||, !).
+
+#  Dia 4: profundizando en funciones y trabajos con Arrays
+
+    las funciones son bloques de codigos reutilizables.
+    pueden tomar parametros y devolver valores.
