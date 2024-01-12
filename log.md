@@ -53,3 +53,18 @@
     }
     };
     solicitud.send();
+
+# Día 8: Manipulación de Elementos HTML y CSS con JavaScript
+    Repaso Rápido:
+    Manipulación de Estilos con JavaScript:
+    
+    Cambiar y manipular estilos CSS de elementos HTML.
+
+#        Manipulación de Clases con JavaScript:
+
+        Agregar, quitar y alternar clases en elementos HTML.
+        Ejemplo de agregar una clase:
+        javascript
+        
+        let elemento = document.getElementById('miElemento');
+        elemento.classList.add('miClase');

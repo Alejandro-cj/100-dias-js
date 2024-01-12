@@ -1,0 +1,39 @@
+<!-- Archivo HTML - Proyecto Pequeño: Cambiar Estilo con JavaScript -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Pequeño - Cambiar Estilo con JavaScript</title>
+  <style>
+    /* Estilo CSS inicial */
+    #miParrafo {
+      padding: 10px;
+      background-color: lightgray;
+      transition: background-color 0.5s ease;
+    }
+
+    /* Estilo CSS cuando se aplica la clase nuevoEstilo */
+    #miParrafo.nuevoEstilo {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+
+  <p id="miParrafo">Este es un párrafo.</p>
+  <button id="botonCambiarEstilo">Cambiar Estilo</button>
+
+  <script>
+    let parrafo = document.getElementById('miParrafo');
+    let boton = document.getElementById('botonCambiarEstilo');
+
+    boton.addEventListener('click', function() {
+      // Cambiar el color de fondo y agregar una clase
+      parrafo.style.backgroundColor = 'blue';
+      parrafo.classList.add('nuevoEstilo');
+    });
+  </script>
+
+</body>
+</html>

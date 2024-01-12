@@ -1,0 +1,37 @@
+<!-- Archivo HTML -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulación de Elementos HTML y CSS con JavaScript</title>
+  <style>
+    /* Estilo CSS inicial */
+    #miElemento {
+      width: 200px;
+      height: 200px;
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="miElemento">Elemento</div>
+  <button id="botonCambiarEstilo">Cambiar Estilo</button>
+
+  <script>
+    let elemento = document.getElementById('miElemento');
+    let boton = document.getElementById('botonCambiarEstilo');
+
+    // Manejo de eventos para cambiar el estilo del elemento
+    boton.addEventListener('click', function() {
+      // Cambiar el color de fondo
+      elemento.style.backgroundColor = 'blue';
+
+      // Agregar una clase al elemento
+      elemento.classList.add('nuevoEstilo');
+    });
+  </script>
+
+</body>
+</html>
